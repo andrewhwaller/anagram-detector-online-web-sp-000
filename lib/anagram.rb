@@ -16,8 +16,5 @@ class Anagram
     #3. split word into characters and compare
     #4. if some_word.split(" ") == word.split(" ") then @@matches << some_word return @@matches
     array.select {|possible_match| possible_match.split(" ").sort == word.split(" ").sort}
-      end
-    end
-    @@matches
   end
 end
