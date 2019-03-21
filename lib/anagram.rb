@@ -8,7 +8,8 @@ class Anagram
     @word = word
   end
 
-  def match(word)
-    @@matches.find_all{|c| c == word }
+  def match(some_words)
+    some_words.find_all{|c| c == self.word }
+    #1. iterate over matches
   end
 end
