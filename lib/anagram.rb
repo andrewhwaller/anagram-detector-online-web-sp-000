@@ -18,7 +18,7 @@ class Anagram
     some_words.each {|some_word|
       if some_word.split(" ") == word.split(" ")
         then @@matches << some_word
-        else}
+      end}
     @@matches
   end
 end
