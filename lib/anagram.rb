@@ -9,7 +9,7 @@ class Anagram
   end
 
   def match(array)
-    array.find_all{|c| c == self.word }
+    # array.find_all{|c| c == self.word }
 
     #1. iterate over matches
     #2. split into characters
