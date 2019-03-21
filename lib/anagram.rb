@@ -1,11 +1,9 @@
 # Your code goes here!
 class Anagram
-  attr_accessor :word
-
-  @@matches = []
+  attr_accessor :name
 
   def initialize(word)
-    @word = word
+    @name = word
   end
 
   def match(array)
@@ -15,6 +13,6 @@ class Anagram
     #2. split into characters
     #3. split word into characters and compare
     #4. if some_word.split(" ") == word.split(" ") then @@matches << some_word return @@matches
-    array.select {|w| w.split(" ").sort == @word.split(" ").sort}
+    array.select {|w| w.split(" ").sort == @name.split(" ").sort}
   end
 end
