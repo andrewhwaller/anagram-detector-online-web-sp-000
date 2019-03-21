@@ -10,7 +10,7 @@ class Anagram
 
   def match(some_words)
     some_words.find_all{|c| c == self.word }
-    
+
     #1. iterate over matches
     #2. split into characters
     #3. split word into characters and compare
