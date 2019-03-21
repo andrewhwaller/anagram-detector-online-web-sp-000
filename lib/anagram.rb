@@ -9,7 +9,7 @@ class Anagram
   end
 
   def self.match(word)
-    @@matches.detect{|match| match == word }
+    @@matches.detect{|c| c == word }
 
   #result = nil
   end
