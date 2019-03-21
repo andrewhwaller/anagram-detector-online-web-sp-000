@@ -9,8 +9,6 @@ class Anagram
   end
 
   def match(some_words)
-    some_words = []
-
     some_words.find_all{|c| c == self.word }
 
     #1. iterate over matches
@@ -18,7 +16,7 @@ class Anagram
     #3. split word into characters and compare
     #4. if some_word.split(" ") == word.split(" ") then @@matches << some_word return @@matches
     some_words.each do |possible_match|
-      if possible_match.split(" ") == word.split(" ")
+      if possible_match.split(" ").sort == word.split(" ").sort
         then @@matches << some_word
       end
     end
