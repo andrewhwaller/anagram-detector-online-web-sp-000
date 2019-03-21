@@ -10,7 +10,5 @@ class Anagram
 
   def match(word)
     @@matches.find_all{|c| c == word }
-
-  #result = nil
   end
 end
