@@ -17,7 +17,7 @@ class Anagram
     #4. if some_word.split(" ") == word.split(" ") then @@matches << some_word return @@matches
     some_words.each do |possible_match|
       if possible_match.split(" ") == word.split(" ")
-        then @@matches << some_words
+        then @@matches.push
       end
     end
     @@matches
