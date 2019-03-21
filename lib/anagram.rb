@@ -19,6 +19,7 @@ class Anagram
       if some_word.split(" ") == word.split(" ")
         then @@matches << some_word
       end
+    end
     @@matches
   end
 end
