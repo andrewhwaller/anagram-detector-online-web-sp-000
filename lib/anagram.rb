@@ -8,7 +8,7 @@ class Anagram
     @word = word
   end
 
-  def self.match(word)
+  def match(word)
     @@matches.detect{|c| c == word }
 
   #result = nil
