@@ -15,8 +15,8 @@ class Anagram
     #2. split into characters
     #3. split word into characters and compare
     #4. if some_word.split(" ") == word.split(" ") then @@matches << some_word return @@matches
-    some_words.each do |some_word|
-      if some_word.split(" ") == word.split(" ")
+    some_words.each do |possible_match|
+      if possible_match.split(" ") == word.split(" ")
         then @@matches << some_word
       end
     end
